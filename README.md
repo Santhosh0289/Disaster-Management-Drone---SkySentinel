@@ -15,18 +15,25 @@ The drone will monitor and surveil the damaged areas caused by a Himalayan lands
   Using thermal imaging and AI-driven object detection, the drone can quickly detect and locate fires in forests, buildings, or industrial areas, providing crucial early warnings for firefighting teams.
 - **Damage Assessment Using 3D Mapping** 🏗️  
   The system creates high-resolution 3D maps of affected areas using aerial imagery, allowing urban planners and disaster response teams to assess structural damage and plan reconstruction efficiently.
+
+
+https://github.com/user-attachments/assets/e4a65822-2e6e-41b0-ba8c-603521a60280
+
+  
 - **Air Quality & Toxic Gas Detection** 🌫️  
   Equipped with advanced sensors and AI models, the drone can monitor air quality, detecting toxic gases, pollution levels, and hazardous conditions, which is vital for environmental and public health safety.
 - **Environmental Analysis**  
   The drone continuously collects and analyzes environmental data, including temperature, humidity, and atmospheric conditions, assisting in climate research, pollution monitoring, and disaster prevention.
+
+
+https://github.com/user-attachments/assets/892e7bb4-0088-472d-8b7b-f02c42c57b7a
+
+
 - **Autonomous Search Routes**  
   The drone is capable of autonomously determining search routes based on AI-driven path optimization. This ensures efficient area coverage for search and rescue missions, minimizing redundant flight paths and improving response times in critical situations.
   
- 
-
 
 https://github.com/user-attachments/assets/1e84d471-392c-425a-8c81-6f6435ce72d8
-
 
 
 
