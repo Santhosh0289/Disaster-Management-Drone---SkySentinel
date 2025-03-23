@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Disaster-Management-Drone---SkySentinel
 
 ## 🚀 Overview
@@ -137,9 +137,9 @@ export default tseslint.config({
   },
 })
 ```
->>>>>>> 531c960b (project added)
->>>>>>>
->>>>>>> ## 📬 Contact & Contributions
+ 531c960b (project added)
+
+## 📬 Contact & Contributions
 Contributions are welcome! Feel free to submit issues or open a pull request. 🚀
 S.Santhosh
 U S Aashika vijeta
