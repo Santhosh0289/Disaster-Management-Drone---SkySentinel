@@ -21,6 +21,12 @@ The drone will monitor and surveil the damaged areas caused by a Himalayan lands
   The drone continuously collects and analyzes environmental data, including temperature, humidity, and atmospheric conditions, assisting in climate research, pollution monitoring, and disaster prevention.
 - **Autonomous Search Routes**  
   The drone is capable of autonomously determining search routes based on AI-driven path optimization. This ensures efficient area coverage for search and rescue missions, minimizing redundant flight paths and improving response times in critical situations.
+  
+  <video width="600" controls>
+  <source src="videos/my_video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 ## 🌟 Novelty
 - **No-Sensor System** – Unlike traditional drones that require expensive sensors, DroneControl relies on AI models and computer vision techniques to process visual and environmental data, reducing hardware costs and increasing scalability.
