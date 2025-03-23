@@ -1,0 +1,119 @@
+/* Full-page container with animated sky background */
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
+    height: 100%;
+}
+
+.mode-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #87CEFA, #4682B4, #1E3A5F);
+    background-size: 300% 300%;
+    animation: skyAnimation 12s infinite alternate cubic-bezier(0.4, 0, 0.2, 1); /* Smoother animation */
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding-top: 6rem;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Animated background effect (smooth transition from day to night sky) */
+@keyframes skyAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Mode Title */
+.mode-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
+}
+
+/* Mode Circles Container - Single Line Layout */
+.mode-circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    flex-wrap: wrap; /* Allows circles to wrap on smaller screens */
+}
+
+/* Bigger and Interactive Circles */
+.mode-circle {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #5dade2, #1f78b4);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Glow Effect */
+.mode-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 45px 15px rgba(173, 216, 230, 0.8);
+}
+
+/* Subtle Background Glow when Hovered */
+.mode-circle:hover::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 70%);
+    opacity: 0.5;
+    filter: blur(25px);
+    z-index: -1;
+}
+
+/* Floating Animation */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); } /* Slightly increased for a smoother bounce */
+    100% { transform: translateY(0px); }
+}
+
+.mode-circle {
+    animation: floating 4s infinite ease-in-out alternate; /* Adjusted for smoother float */
+}
+
+/* Mode Text - Always Visible */
+.mode-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+}
+
+/* Image inside Circle */
+.mode-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Slightly smoother transition */
+}
+
+/* Hover Effect - Show Image but Keep Title */
+.mode-circle:hover .mode-image {
+    opacity: 1;
+}

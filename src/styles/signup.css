@@ -1,0 +1,129 @@
+/* Full-Screen Background */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #001F3F, #007BFF);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Animated Background */
+  .signup-container::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    top: 10%;
+    left: 5%;
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: floating 6s infinite alternate ease-in-out;
+  }
+  
+  .signup-container::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    bottom: 15%;
+    right: 10%;
+    border-radius: 50%;
+    filter: blur(60px);
+    animation: floating 8s infinite alternate-reverse ease-in-out;
+  }
+  
+  /* Floating Animation */
+  @keyframes floating {
+    0% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
+  
+  /* Signup Box - Centered & Elegant */
+  .signup-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 2.5rem;
+    border-radius: 14px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 420px;
+    color: white;
+    z-index: 1;
+  }
+  
+  .signup-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input Fields */
+  .input-group {
+    text-align: left;
+    margin-bottom: 18px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  /* Signup Button */
+  .signup-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff8c00, #ff5500);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .signup-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 6px 18px rgba(255, 85, 0, 0.5);
+  }
+  
+  /* Login Redirect */
+  .login-text {
+    margin-top: 12px;
+    font-size: 1rem;
+  }
+  
+  .login-text a {
+    color: #ffdd57;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-text a:hover {
+    text-decoration: underline;
+  }
+  

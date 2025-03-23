@@ -1,0 +1,136 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #1E90FF, #87CEEB);
+}
+
+/* Home Page Styling */
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Heading Animation */
+.home h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards, floatText 3s infinite alternate;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.home h1:hover {
+  text-shadow: 0 0 15px rgba(173, 216, 230, 0.8), 0 0 30px rgba(173, 216, 230, 0.6), 0 0 45px rgba(173, 216, 230, 0.4);
+}
+
+/* Paragraph */
+.home p {
+  font-size: 1.5rem;
+  max-width: 900px;
+  line-height: 1.8;
+  color: white;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out 1s forwards;
+}
+
+/* Button Animation */
+.cta-button {
+  display: inline-block; /* Prevents full-width expansion */
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #FFA500, #FF4500);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 1.5s forwards;
+  min-width: 180px; /* Prevents button from being too small */
+  max-width: 250px; /* Ensures button doesn't stretch too wide */
+  text-align: center;
+  margin: 0 auto; /* Centers the button */
+}
+
+/* Hover Effect */
+.cta-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 18px rgba(255, 69, 0, 0.5);
+  background: linear-gradient(45deg, #FF4500, #FFA500);
+}
+
+/* Active Click Effect */
+.cta-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px rgba(255, 69, 0, 0.5);
+}
+
+
+/* Floating Clouds */
+.clouds {
+  position: absolute;
+  width: 300%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0) 80%);
+  filter: blur(50px);
+  opacity: 1;
+}
+
+.clouds-1 { animation: moveClouds 5s linear forwards; } /* Was 10s */
+.clouds-2 { animation: moveClouds 7s linear forwards; opacity: 0.8; } /* Was 15s */
+.clouds-3 { animation: moveClouds 9s linear forwards; opacity: 0.6; } /* Was 20s */
+
+@keyframes moveClouds {
+  0% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; } /* Moves super fast and fades out */
+}
+
+/* Floating Drone Animation */
+.drone {
+  position: absolute;
+  top: 30%;
+  left: -10%;
+  width: 100px;
+  height: auto;
+  animation: flyDrone 10s linear infinite;
+}
+
+@keyframes flyDrone {
+  0% { transform: translateX(-10%) translateY(10px) rotate(0deg); }
+  50% { transform: translateX(50vw) translateY(-10px) rotate(5deg); }
+  100% { transform: translateX(110vw) translateY(10px) rotate(0deg); }
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Floating Text Animation */
+@keyframes floatText {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}

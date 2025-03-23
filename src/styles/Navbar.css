@@ -1,0 +1,84 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #00A2FF, #5EB3E4);
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-sizing: border-box;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Styling */
+.navbar .logo {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+/* Glowing Effect for "Sky Sentinel" */
+.navbar .logo:hover {
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.9), 
+               0px 0px 30px rgba(255, 255, 255, 0.7);
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+/* Active Link */
+.nav-links a.active {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+}
+
+/* Special Styling for Login Button */
+.login-link {
+  background: linear-gradient(to right, #FF8C00, #FF4500); /* Orange Gradient */
+  font-weight: bold;
+  padding: 10px 30px; /* Added extra padding for more spacing */
+  border-radius: 8px;
+  border: 2px solid white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 8px rgba(255, 140, 0, 0.6);
+  margin-left: 30px; /* Extra space before Login button */
+  display: inline-block;
+  text-align: center;
+}
+
+/* Hover Effect - Keeps Same Color */
+.login-link:hover {
+  background: linear-gradient(to right, #FF8C00, #FF4500); /* Keep the same color */
+  box-shadow: 0px 0px 20px rgba(255, 140, 0, 0.9), 
+              0px 0px 35px rgba(255, 69, 0, 0.8); /* Soft Neon Glow */
+  transform: scale(1.1); /* Slightly expand */
+}

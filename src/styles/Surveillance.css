@@ -1,0 +1,145 @@
+/* COMMON STYLING FOR ALL MODES */
+.surveillance-container {
+    min-height: 100vh;
+    width: 100vw;
+    background: url("../images/sky-bg.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+/* Semi-transparent Overlay for Better Contrast */
+.surveillance-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 50, 0.5); /* Dark blue overlay */
+    z-index: 1;
+}
+
+/* Header Styling */
+.surveillance-header {
+    position: relative;
+    z-index: 2;
+}
+
+.surveillance-header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.8);
+}
+
+.surveillance-header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Grid Layout for Cards */
+.surveillance-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    width: 90%;
+    position: relative;
+    z-index: 2;
+}
+
+/* Card Design */
+.surveillance-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 25px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 2;
+    color: white; /* Ensures text is visible */
+}
+
+/* Hover Effect */
+.surveillance-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Mode-Specific Borders */
+.private { border-left: 6px solid #1E90FF; } /* Blue */
+.military { border-left: 6px solid #FF4500; } /* Red-Orange */
+.research { border-left: 6px solid #32CD32; } /* Green */
+.disaster { border-left: 6px solid #FFD700; } /* Gold */
+
+/* Button Styling */
+.surveillance-btn {
+    background: #fff;
+    color: #1E90FF;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.surveillance-btn:hover {
+    background: #ffcc00;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Back Button */
+.back-btn-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.back-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #007BFF, #00C9FF); /* Sky-themed gradient */
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.back-btn:hover {
+    width: 170px; /* Expands on hover */
+    border-radius: 30px;
+    justify-content: space-around;
+    background: linear-gradient(135deg, #ffcc00, #ff8800); /* Hover effect */
+}
+
+.back-btn span {
+    opacity: 0;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.back-btn:hover span {
+    opacity: 1;
+}
