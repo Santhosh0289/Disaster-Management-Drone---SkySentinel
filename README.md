@@ -137,7 +137,6 @@ export default tseslint.config({
   },
 })
 ```
- 531c960b (project added)
 
 ## 📬 Contact & Contributions
 Contributions are welcome! Feel free to submit issues or open a pull request. 🚀
