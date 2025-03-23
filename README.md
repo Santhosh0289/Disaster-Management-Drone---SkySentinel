@@ -11,6 +11,11 @@ The drone will monitor and surveil the damaged areas caused by a Himalayan lands
 ## 📌 Key Features
 - **Facial Recognition for Missing Persons** 🏥  
   The drone is equipped with an AI-based facial recognition system that can help identify missing persons in disaster-stricken areas. By scanning faces and cross-referencing them with a database, the system enhances search and rescue operations.
+
+
+https://github.com/user-attachments/assets/c2dcd261-a182-43ba-b88c-679bb3b8c232
+
+  
 - **Fire & Smoke Detection** 🔥  
   Using thermal imaging and AI-driven object detection, the drone can quickly detect and locate fires in forests, buildings, or industrial areas, providing crucial early warnings for firefighting teams.
 - **Damage Assessment Using 3D Mapping** 🏗️  
