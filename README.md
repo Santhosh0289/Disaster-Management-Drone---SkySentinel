@@ -23,7 +23,7 @@ The drone will monitor and surveil the damaged areas caused by a Himalayan lands
   The drone is capable of autonomously determining search routes based on AI-driven path optimization. This ensures efficient area coverage for search and rescue missions, minimizing redundant flight paths and improving response times in critical situations.
   
   <video width="600" controls>
-  <source src="videos/my_video.mp4" type="video/mp4">
+  <source src="videos/[my_video.mp4](https://github.com/Santhosh0289/Disaster-Management-Drone---SkySentinel/blob/main/videos/WhatsApp%20Video%202025-03-19%20at%2011.40.33_0ebae835.mp4)" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
