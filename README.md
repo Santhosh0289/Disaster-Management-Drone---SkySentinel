@@ -82,17 +82,7 @@ These are the main three limitations we are working to overcome in this project 
 
 **Mapping & Control:** Pygame, Google Maps API, Mapbox API, Tello SDK (djitellopy)
 
-## 📬 Contact & Contributions
-Contributions are welcome! Feel free to submit issues or open a pull request. 🚀
-S.Santhosh
-U S Aashika vijeta
-S.Rishi kumar
-S.Yogeshwaran
-Prabakar
-Surya
-Pugazanthi
-Jeba Maanyu
-=======
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -148,3 +138,15 @@ export default tseslint.config({
 })
 ```
 >>>>>>> 531c960b (project added)
+>>>>>>>
+>>>>>>> ## 📬 Contact & Contributions
+Contributions are welcome! Feel free to submit issues or open a pull request. 🚀
+S.Santhosh
+U S Aashika vijeta
+S.Rishi kumar
+S.Yogeshwaran
+Prabakar
+Surya
+Pugazanthi
+Jeba Maanyu
+=======
